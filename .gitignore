@@ -1,0 +1,7 @@
+# 忽略 .env 和暫存檔案
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.vscode/
