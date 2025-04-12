@@ -12,8 +12,8 @@ from dotenv import load_dotenv
 
 # load .env variable
 load_dotenv()
-key = os.getenv("DC_KEY")
-print(f"successful read key : {key}")
+DC_KEY = os.getenv("DC_KEY")
+print(f"successful read key : {DC_KEY}")
 
 
 intents = discord.Intents.default()
@@ -33,5 +33,11 @@ async def on_message(message):
     if message.content == 'test':
         await message.channel.send("hi")
     
-    
+
+
+
+
+
+
+
 client.run(DC_KEY)
